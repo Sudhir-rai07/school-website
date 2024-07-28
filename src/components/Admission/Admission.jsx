@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { admissionProcess } from '../../data/admissionProcess';
 import AdmissionCriteria from './AdmissionCriteria';
 import { Link } from 'react-router-dom';
-import Footer from '../Footer';
+import { FaAngleDown } from 'react-icons/fa';
 
 const Admission = () => {
     const [openIndex, setOpenIndex] = useState(null);
@@ -49,7 +49,7 @@ const Admission = () => {
     </div>
     
     <div className='py-8 text-2xl font-semibold text-blue-500 hover:underline'>
-      <Link to={'/admission'}>Fill admission form here</Link>
+      <Link to={'/admission'} className='underline'>Fill admission form here</Link>
     </div>
     </div>
   )
@@ -60,12 +60,17 @@ export default Admission
 const AccordionItem = ({ itemName, process, isOpen, onClick }) => {
     return (
       <div className="mb-4 overflow-hidden border rounded-lg">
+        <div onClick={onClick} className='flex justify-between w-full bg-gray-700 cursor-pointer focus:outline-none'>
         <button
-          onClick={onClick}
-          className="w-full p-4 text-left text-white bg-gray-700 focus:outline-none"
+          
+          className="p-4 text-left text-white "
         >
           {itemName}
         </button>
+        <button className='pr-2 text-white'>
+          <FaAngleDown />
+        </button>
+        </div>
         {isOpen && (
           <motion.div
           initial={{height: 0}} animate={{height: "auto"}} transition={{duration: 0.4}} 

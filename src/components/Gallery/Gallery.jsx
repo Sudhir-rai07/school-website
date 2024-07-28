@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from '../Navbar';
+import { MdClose } from 'react-icons/md';
 
 const images = [
   'gallery/sports_day.jpg',
@@ -45,10 +46,10 @@ const Gallery = () => {
           >
             <div className="relative max-w-3xl p-4 mx-auto bg-white rounded-lg shadow-lg">
               <button
-                className="absolute text-2xl font-bold text-white top-2 right-2"
+                className="absolute text-2xl font-bold text-black top-2 right-2"
                 onClick={() => setSelectedImage(null)}
               >
-                &times;
+                <MdClose />
               </button>
               <motion.img
                 src={selectedImage}

@@ -29,7 +29,7 @@ const Curriculums = () => {
       </div>
 
       <div className='mt-6 text-right text-blue-500'>
-      <Link to={'/teaching-methods'} className='text-2xl hover:underline'>See more about our teaching methodologies</Link>
+      <Link to={'/teaching-methods'} className='text-sm underline lg:text-xl'>See more about our teaching methodologies</Link>
       </div>
     </div>
   )

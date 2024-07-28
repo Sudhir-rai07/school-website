@@ -9,7 +9,7 @@ const TeachingMethods = () => {
     <div className="w-full mx-auto">
     <Navbar />
 
-    <div className='container mx-auto mt-4 text-2xl'>
+    <div className='container px-4 mx-auto mt-4 text-2xl'>
         <p>
         At <span className="px-1 font-semibold tracking-wide text-blue-500">
         Springdale Public School
@@ -18,7 +18,7 @@ const TeachingMethods = () => {
     </div> 
       <TeachingMethod data={teachingMethods}/>
 
-      <div className='container w-full py-8 mx-auto mt-4 text-xl md:w-1/2'>
+      <div className='container w-full px-4 py-8 mx-auto mt-4 text-xl md:w-1/2'>
       We look forward to welcoming new students and their families to <span className="px-1 font-semibold tracking-wide text-teal-500">
       Springdale Public School
           </span>. If you have any questions or need further assistance, please do not hesitate to contact our admissions office.
